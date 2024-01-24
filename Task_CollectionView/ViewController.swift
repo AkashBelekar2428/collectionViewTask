@@ -16,6 +16,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: Regiter Nib
         collectionView.register(UINib(nibName: "ClothsCVC", bundle: nil), forCellWithReuseIdentifier: "ClothsCVC")
         collectionView.dataSource = self
         collectionView.delegate = self
